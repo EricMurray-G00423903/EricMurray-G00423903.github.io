@@ -1,0 +1,76 @@
+/* Main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Brawler&display=swap');
+
+body {
+    background-color: rgb(1, 37, 44);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.logo {
+    font-family: 'Brawler', serif;
+    font-size: 100px;
+    color: rgb(136, 223, 149);
+}
+
+@media (max-width: 576px) {
+    .logo {
+      font-size: 50px;
+    }
+  }
+  
+@media (min-width: 577px) and (max-width: 991px) {
+    .logo {
+      font-size: 75px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .logo {
+      font-size: 100px;
+    }
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    font-family: 'Brawler', serif;
+    margin-right: 25px;
+    color: rgb(105, 162, 176);
+}
+
+a {
+    color: rgb(249, 245, 255);
+    text-decoration: none;
+    transition: color 0.3s; /* Add smooth color transition */
+}
+  
+a:hover {
+    color: rgb(224, 82, 99); /* Change color when hovering */
+}
+
+.footer {
+    font-family: 'Brawler', serif;
+    color: rgb(249, 245, 255);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
